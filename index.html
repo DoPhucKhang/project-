@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini-project Bài 1: Tổng hợp kiến thức</title>
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
@@ -23,53 +25,57 @@
 
   
   <main>
-    <section id="ly-thuyet">
-      <h2>Phân vùng cấu trúc Semantic</h2>
-      <p>Dưới đây là sơ đồ phác thảo giao diện UI đã vẽ:</p>
-      <img src="assets/ui-sketch.png" alt="Ảnh phác thảo giao diện UI học tập">
-    </section>
+    <h2>MAIN CONTENT</h2>
+    
+    
+    <div class="section-container">
+      
+      <section id="ly-thuyet">
+        <h3>SECTION: Ảnh UI / Lý thuyết</h3>
+        <p>Dưới đây là sơ đồ phác thảo giao diện UI đã vẽ:</p>
+        <img src="assets/ui-sketch.png" alt="Ảnh phác thảo giao diện UI học tập">
+      </section>
 
-    <section id="lo-trinh">
-      <h2>Bảng tóm tắt các nhóm thẻ cơ bản</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Nhóm thẻ</th>
-            <th>Các thẻ đại diện</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cấu trúc gốc</td>
-            <td>DOCTYPE, html, head, body</td>
-          </tr>
-          <tr>
-            <td>Bố cục (Semantic)</td>
-            <td>header, nav, main, section, footer</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section id="lo-trinh">
+        <h3>SECTION: Bảng dữ liệu & Form</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Nhóm thẻ</th>
+              <th>Các thẻ đại diện</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cấu trúc gốc</td>
+              <td>DOCTYPE, html, head, body</td>
+            </tr>
+            <tr>
+              <td>Bố cục Semantic</td>
+              <td>header, nav, main, section, footer</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <section id="dang-ky">
-      <h2>Liên hệ nhận tài liệu PDF</h2>
-      <form action="#" method="POST">
-        <div>
-          <label for="name">Tên học viên:</label>
-          <input type="text" id="name" name="student_name" required>
-        </div>
-        <div>
-          <label for="email">Địa chỉ Email:</label>
-          <input type="email" id="email" name="student_email" required>
-        </div>
-        <button type="submit">Đăng ký ngay</button>
-      </form>
-    </section>
+        <form action="#" method="POST" style="margin-top: 15px;">
+          <div>
+            <label for="name">Tên học viên:</label>
+            <input type="text" id="name" name="student_name" required>
+          </div>
+          <div>
+            <label for="email">Địa chỉ Email:</label>
+            <input type="email" id="email" name="student_email" required>
+          </div>
+          <button type="submit">Đăng ký ngay</button>
+        </form>
+      </section>
+      
+    </div>
   </main>
 
   
   <footer>
-    <p>&copy; 2026 - Dự án Mini-project Bài 1 - Đỗ Phúc Khang</p>
+    <p>FOOTER: &copy; 2026 - Đỗ Phúc Khang</p>
   </footer>
 </body>
 </html>
